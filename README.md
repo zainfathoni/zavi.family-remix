@@ -17,6 +17,7 @@ This Turborepo includes the following packages/apps:
 ### Apps and Packages
 
 - `docs`: a [Next.js](https://nextjs.org/) app
+- `homeschooling`: a [Remix](https://remix.run/) app with [The Epic Stack](https://www.epicweb.dev/epic-stack)
 - `web`: another [Next.js](https://nextjs.org/) app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
@@ -36,8 +37,8 @@ This Turborepo has some additional tools already setup for you:
 
 To build all apps and packages, run the following command:
 
-```
-cd my-turborepo
+```shell
+cd zavi.family
 pnpm build
 ```
 
@@ -45,8 +46,8 @@ pnpm build
 
 To develop all apps and packages, run the following command:
 
-```
-cd my-turborepo
+```shell
+cd zavi.family
 pnpm dev
 ```
 
@@ -56,8 +57,8 @@ Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo
 
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
-```
-cd my-turborepo
+```shell
+cd zavi.family
 npx turbo login
 ```
 
@@ -65,7 +66,7 @@ This will authenticate the Turborepo CLI with your [Vercel account](https://verc
 
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
 
-```
+```shell
 npx turbo link
 ```
 
